@@ -1,0 +1,72 @@
+
+#notify
+{
+	position: absolute;
+	width: 20%;
+	height: 500%;
+	background-color: rgba(0,0,0,0.7);
+	right: 2%;
+	top:112%;
+	display:none;
+	animation: notifyzoom 0.5s;
+}
+@media only screen and (max-width: 600px) {
+	#notify
+{
+	position: absolute;
+	width: 50%;
+	height: 500%;
+	background-color: rgba(0,0,0,0.7);
+	right: 10%;
+	top:300%;
+	display:none;
+	animation: notifyzoom 0.5s;
+}
+  }
+
+@keyframes notifyzoom
+{
+	0%
+	{
+		transform: scaleY(0);
+	}
+	100%
+	{
+		transform: scaleY(1);
+	}
+}
+
+ul li:hover #notify
+{
+	display: block;
+}
+
+#notify p
+{
+	color:white;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+#p1
+{
+	padding-left: 20px;
+}
+
+#p2
+{
+	padding-left: 20px;
+}
+
+#p3
+{
+	padding-left: 18px;
+}
+
+#p4
+{
+	padding-left: 10px;
+}
